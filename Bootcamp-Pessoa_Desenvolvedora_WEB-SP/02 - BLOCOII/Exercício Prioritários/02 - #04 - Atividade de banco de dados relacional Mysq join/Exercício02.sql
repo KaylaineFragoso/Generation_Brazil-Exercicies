@@ -1,5 +1,5 @@
-create database db_pizzaria_legal;
-	use db_pizzaria_legal;
+		create database db_pizzaria_legal;
+		use db_pizzaria_legal;
     
 		create table tb_categoria(
         id_tipo int(5) not null,
