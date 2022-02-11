@@ -3,8 +3,12 @@
     text-align: center;
 }
 
-.justify{
-    text-align: justify;
+.texto {
+    width: 65%; /*largura*/
+    text-align: justify; /* alinha o texto */
+    margin-top: 2rem;
+    display: block;
+    margin: 1rem auto 0;
 }
 
 .container {
@@ -12,6 +16,14 @@
     flex-flow: row;
     justify-content: center;
     align-items: center;
+}
+
+.perfil {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #9c09af;
+    border-radius: 10px 80px;
+    margin: auto
 }
 
 #menu li {
@@ -46,20 +58,8 @@
 .mb-50 {
     margin-bottom: 50px;
 }
-
-nav {
-    padding: 1rem;
-    display: flex;
-    justify-content: justify;
-}
 /*Estilos da página contato.html*/
 
-.ml-50{
-    margin-left: 80px;
-}
-
-nav {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
+.ml{
+    margin-left: 60px;
 }
