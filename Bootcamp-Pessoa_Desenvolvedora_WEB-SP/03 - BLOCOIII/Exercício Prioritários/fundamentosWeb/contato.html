@@ -6,9 +6,11 @@
     <title>Contato</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
-    <ul id="menu">
+    <nav>
+    <ul>
         <li>
           <a href="index.html"> Home </a>
         </li>
@@ -16,51 +18,43 @@
           <a href="contato.html"> Contato </a>
         </li>
         </ul>
+    </nav>
+
+    <main class="Contato">
+        <section class="form">
    
-            <h1 class="center">Entre em contato comigo</h1>
-            <div class="center"
-            <selection>
+            <h2>Entre em contato comigo</h2>
             <form>
 
                 <label for="nome">Nome:</label> <br>
                 <input type="text" id="nome" onkeyup="validaNome()">
                 <div id="txtNome"></div>
-                <br>
+                
                 <label for="email">E-mail:</label> <br>
                 <input type="email" id="email" onkeyup="validaEmail()">
                 <div id="txtEmail"></div>
-                <br>
+                
                 <label for="assunto">Assunto:</label> <br>
                 <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaAssunto()"> </textarea>
+                <div id='contador'></div>
                 <div id="txtAssunto"></div>
-                <br>
+            
                 <button onclick="enviar()">Enviar</button>
+            </form>
             </selection>
-            </div>
-            <div class="center"
+
             <selection class="endereço">
+                <h2>Endereço:</h2>
                 <p>Av. Paulista, 1000</p>
                 <p>São Paulo- SP</p>
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098169135352!2d-46.65412628538375!3d-23.56491746760797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1644441102819!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id = "mapa"></iframe>
-
             </selection>
-        </div>
-    </div>
-</main>
-            </form>
-<footer>
-    <div class="center">
-        <a href="https://github.com/KaylaineFragoso" target="_blank">
-            <img class="tm-social" src="assets/img/github.png" alt="Logo do GitHub" 
-        </a> 
-    
-    </div>
-    <p class ="center">
-        Feito com carinho - Kaylaine Venancio - 2022 - 🤍
-    </p>
-</footer>
+        </main>
 
-<script src="assets/js/script.js"></script>
-</body>
-</html>
+        <footer>
+            <p>Feito com carinho - Kaylaine Venancio - 2022 ♥</p>
+          </footer>
+      
+      
+          <script src='./assets/js/script.js'></script>
+        </body>
+      </html>

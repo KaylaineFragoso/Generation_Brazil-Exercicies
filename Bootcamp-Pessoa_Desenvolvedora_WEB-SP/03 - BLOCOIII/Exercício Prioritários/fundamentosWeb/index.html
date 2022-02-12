@@ -10,22 +10,21 @@
 </head>
 <body>
     <nav>
-        <ul id="menu">
+        <ul>
             <li>
                 <a href="index.html"> Home </a>
             </li>
-            
             <li>
                 <a href="contato.html"> Contato </a>
             </li>
-            
-        
-   
-</body>
+            </ul>
+            </nav>
 
-    <h1 class= "center"> Sobre Mim</h1>
-        <main class="p-30">
-    <section class="texto">
+            <main>
+                <section id="sobreMim">
+                    <h1><span class="type-effect"></span></h1>
+                     <div class='sobreGeral'>
+                          <div class='texto'>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
               odio possimus, dolorem earum atque itaque quas soluta placeat iure
@@ -45,18 +44,20 @@
             possimus rem tempore ipsam aut eligendi beatae quidem saepe
             temporibus.
         </p> 
-<div class="center">
- <img class="br-50 wh-300 p-30" 
+         </div>
+ <img
  src="assets/img/foto.kay.jpg" 
  alt="Foto do criador desse conteudo"
  class="perfil"
  />
   </div>
 </section>
-     <section id="meuVideo">
-        <h2 class="center">Meu Video predileto:</h2>
 
-        <iframe width="570"
+     <section id="meuVideo">
+        <h2>Meu video favorito</h2>
+
+        <iframe
+         width="570"
         height="315" 
         src="https://www.youtube.com/embed/0zTdkEuctsY" 
        title="YouTube video player" 
@@ -66,32 +67,27 @@
        </iframe>
      </section>
 
-     <div class="top" onclick="subirTela()">
+     <div class="topo" onclick="subirTela()">
         Voltar ao Topo
      </div>
     </main>
 
+    <footer>
+        <p class="footer">
+            Feito com carinho - Kaylaine Venancio - 2022 🤍 </p>
+    </footer>
 
+    <script src="./assets/js/script.js"> </script>
 
-<div class="container mb-50">
-    
-</div>
-<hr>
-
-<footer>
-    <div class="container">
-        <a href="https://github.com/KaylaineFragoso" target="_blank">
-            <img class="tm-social" src="assets/img/github.png" alt="Logo do GitHub" 
-        </a> 
-    
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        new TypeIt(".type-effect", {
+            String: ['Vamos falar sobre a Kaylaine'],
+            loop: true
+        }).go()
+    });
+    </script>
     </div>
-    <p class ="center">
-        Feito com carinho - Kaylaine Venancio - 2022 - 🤍
-    </p>
-  
-</footer>
-
-
    </body>
    </html>
 

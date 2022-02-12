@@ -15,12 +15,16 @@ let emailOk = false
 let assuntoOk = false 
 let mapa = document.querySelector ("#mapa")
 
+let contador = document.querySelector("#contador")
+contador.innerHTML = "0 / 100"
+
 nome.style.width = "50%"
 email.style.width = "50%"
 assunto.style.width ="50%"
 
 function validaNome()  {
     let txt = document.querySelector("#txtNome")
+
     if (nome.value.length < 3) {
         txt.innerHTML = "Nome Inválido"
         txt.style.color = "red"
@@ -67,14 +71,20 @@ function enviar () {
     }
 }
 
+function count() {
+    let contador = document.querySelector("#contador")
+    contador.innerHTML = "${assunto.value.length} / 144"
+}
+
 function mapaZoom () {
-    mapa.style.width = "800px"
-    mapa.style.height = "600px"
+    mapa.style.width = "40vw"
+    mapa.style.height = "50vh"
+    mapa.style.zIndex = "15"
 }
 
 function mapaNormal () {
-    mapa.style.width = "400px"
-    mapa.style.height = "250px"
+    mapa.style.width = "40vw"
+    mapa.style.height = "40vh"
 
 }
 
