@@ -174,13 +174,6 @@ footer {
     color: #ecdfdf;
   }
   
-  #mapa {
-    position: absolute;
-    width: 40vw;
-    height: 40vh;
-    transition: .5s;
-  }
-  
   @media (max-width: 768px) {
     .sobreGeral {
       flex-direction: column-reverse;
@@ -191,9 +184,6 @@ footer {
       width: 80vw;
     }
 
-    .endereco {
-      display: none;
-    }
     .form {
       width: 100vw;
     }

@@ -51,42 +51,33 @@ function validaEmail() {
 }
 
 function validaAssunto() {
-    let txtAssunto = document.querySelector("#txtAssunto")
+    let txtAssunto = document.querySelector("#txtAssunto");
 
-    if(assunto.value.length >= 100){
-        txtAssunto.innerHTML = 'Texto muito grande, digite no máximo 100 caractéres'
-        txtAssunto.style.color = "red"
+    contador.innerHTML = `${assunto.value.length} / 100`
+
+    if (assunto.value.length > 100) {
+        txtAssunto.innerHTML = "Texto muito grande, digite no máximo 100 caracteres";
+        txtAssunto.style.color = "red";
+        txtAssunto.style.display = "block";
 
     } else {
         txtAssunto.style.display = "none"
-         assuntoOk = true
+         assuntoOk = true;
     }
 }
 
-function enviar () {
+function enviar() {
     if (nomeOk == true && emailOk == true && assuntoOk == true) {
-        alert ("Formulário enviado com sucesso!")
+      alert("Formulário enviado com sucesso!");
     } else {
-        alert ("Preencha o formulário corretamente antes de enviar...")
+      alert("Preencha o formulário corretamente antes de enviar...");
     }
-}
+  }
 
-function count() {
+function count(){
     let contador = document.querySelector("#contador")
     contador.innerHTML = "${assunto.value.length} / 144"
-}
-
-function mapaZoom () {
-    mapa.style.width = "40vw"
-    mapa.style.height = "50vh"
-    mapa.style.zIndex = "15"
-}
-
-function mapaNormal () {
-    mapa.style.width = "40vw"
-    mapa.style.height = "40vh"
-
-}
+  }
 
 function subirTela () {
     window.scrollTo(0,0)
